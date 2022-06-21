@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- 
+            .<something> is a class
+            <something> is an element
+            #<something> is an id
+            <something>, <something_else> groups multiple selectors
+        -->
+        <style>
+            
+            .noice {
+                color: green;
+                font-size: 24px;
+                width: 200px;
+            }
+            h1 {
+                color: black;
+                font-size: 55px;
+                width: 200px;
+            }
+
+
+
+        </style>
         <meta charset="utf-8">
         <title>This is my Page</title>
     </head>
     <body>
-        <h1>This is a big title</h1>
+        <h1 id = "noice">This is a big title</h1>
         <p>This is my page</p>
         <div>
             This is an ordered list
@@ -17,8 +39,22 @@
             </ol>
             This is an unordered list
             <ul>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="https://www.google.com" target = "_blank">this is a link</a>
+                </li>
+                <li>
+                    <a href="#noice">refers to h1</a>
+                </li>
+                <li>
+                    <p>
+                        This is an image
+                        <br>
+                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" width = 50 height = 50>
+                        <!-- This is a comment-->
+                        <!-- Always specify image size so that it takes up the space if it doesn't load-->
+                    </p>
+    
+                </li>
             </ul>
             <div>This&nbsp;is&nbsp;a&nbsp;non&nbsp;breaking&nbsp;space</div>
 
